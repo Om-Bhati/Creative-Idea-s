@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "0a2e",
+      "title": "Home Tour",
+      "body": "Home is a sweet place",
+      "author": "Om"
+    },
+    {
+      "id": "4c8b",
+      "title": "abcd",
+      "body": "this are 4 letter of alphabets",
+      "author": "krish"
+    },
+    {
+      "id": "8a1c",
+      "title": "A story of a king",
+      "body": "Once upon a time, in a faraway kingdom nestled between towering mountains and dense forests, there lived a wise and beloved king named Alaric. Known throughout the lands for his fairness and humility, King Alaric ruled with compassion. His people adored him for his keen ability to listen to their needs and settle disputes with wisdom. Every month, he would travel to the remotest villages, mingling with farmers, traders, and craftsmen, seeking to understand their hardships and joys. It was this deep connection with his people that made Alaric not just a ruler, but a father to his kingdom.\n\nOne year, a terrible drought struck the land, and rivers dried up while crops withered in the fields. The people grew restless, and many feared starvation. Despite his advisors urging him to hoard the kingdom's reserves for the royal family, Alaric opened the royal granaries to feed the hungry. He also gathered the finest minds of his kingdom to find ways to irrigate the parched lands. As weeks turned into months, hope flickered dimly, but the king's unwavering resolve inspired the people to endure. They labored together to save the kingdom, with Alaric often working alongside them, his royal robe dusted with the earth of his people’s fields.\n\nThen, one miraculous day, the heavens opened, and rain poured down in abundance. The land drank deeply, and soon green shoots began to sprout. The people rejoiced, and many credited the king's faith and tireless efforts for saving the kingdom. Alaric's reign became the stuff of legend, not because of his conquests or wealth, but because he led with his heart. He proved that true kingship lay not in power or riches but in the well-being of the people. To this day, tales of King Alaric’s noble deeds are told around hearths, a reminder of the power of wisdom and kindness in leadership.",
+      "author": "Om Bhati"
+    },
+    {
+      "id": "5609",
+      "title": "React Projects",
+      "body": "Just start building don't think how much time it will take or it would be a waste of time if it didn't work out well. \n\nStarting is the most difficult part if you do it then it will be definately worth it ",
+      "author": "Om"
+    }
+  ]
+}

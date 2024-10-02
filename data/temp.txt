@@ -1,0 +1,4 @@
+run this is new terminal so that this api renders on port 8000 and not on 3000 by default because our server is running on that
+
+
+npx json-server --watch data/db.json --port 8000
