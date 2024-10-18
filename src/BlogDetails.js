@@ -11,23 +11,25 @@ const BlogDetails = () => {
       method: 'DELETE'
     }).then(() => {
       history.push('/');
-    }) 
+    })
   }
 
   return (
     <div className="blog-details">
-      { isPending && <div>Loading...</div> }
-      { error && <div>{ error }</div> }
-      { blog && (
+      {isPending && <div>Loading...</div>}
+      {error && <div>{error}</div>}
+      {blog && (
         <article>
-          <h2>{ blog.title }</h2>
-          <p>Written by { blog.author }</p>
-          <div>{ blog.body }</div>
+          <h2>{blog.title}</h2>
+          <p>Written by {blog.author}</p>
+          {/* Use pre-wrap CSS to preserve newlines */}
+          <pre style={{ whiteSpace: 'pre-wrap' }}>{blog.body}</pre>
           <button onClick={handleClick}>delete</button>
         </article>
       )}
     </div>
+
   );
 }
- 
+
 export default BlogDetails;

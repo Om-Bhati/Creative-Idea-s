@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
-//   const [author, setAuthor] = useState('mario');
   const [author, setAuthor] = useState('');
-const history = useHistory();
+  const [textAreaHeight] = useState('auto');
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,10 +17,19 @@ const history = useHistory();
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
     }).then(() => {
-      // history.go(-1);
       history.push('/');
-    })
-  }
+    });
+  };
+
+  const handleInputChange = (e) => {
+    setBody(e.target.value);
+  };
+
+  useEffect(() => {
+    const textarea = document.querySelector("textarea");
+    textarea.style.height = 'auto'; // Reset height to auto
+    textarea.style.height = `${textarea.scrollHeight}px`; // Set height based on scrollHeight
+  }, [body]); // This effect runs every time the body content changes
 
   return (
     <div className="create">
@@ -37,19 +46,20 @@ const history = useHistory();
         <textarea
           required
           value={body}
-          onChange={(e) => setBody(e.target.value)}
+          onChange={handleInputChange}
+          style={{ height: textAreaHeight, overflow: 'hidden' }}
         ></textarea>
-        <label> Your name :</label>
+        <label>Your name:</label>
         <input 
           type="text" 
           required 
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button>Add Idea </button>
+        <button>Add Idea</button>
       </form>
     </div>
   );
 }
- 
+
 export default Create;
